@@ -8,6 +8,13 @@ export SDL3_BUILD_DIR=~/SDL3_build
 export SDK_JAR=~/android-sdk/platforms/android-34/android.jar
 export KEYSTORE=~/my.keystore
 
+# Verify setup was completed
+if [ ! -d "$SDL3_DIR/android-project/app/src/main/java/org/libsdl/app" ] || [ ! -f "$SDK_JAR" ] || [ ! -f "$SDL3_BUILD_DIR/libSDL3.a" ]; then
+    echo "Error: Required dependencies are missing."
+    echo "Please run ./setup.sh to fully set up the environment from scratch."
+    exit 1
+fi
+
 # Tools from NDK
 export CC="$NDK/toolchains/llvm/prebuilt/linux-aarch64/bin/aarch64-linux-android34-clang"
 export CXX="$NDK/toolchains/llvm/prebuilt/linux-aarch64/bin/aarch64-linux-android34-clang++"
