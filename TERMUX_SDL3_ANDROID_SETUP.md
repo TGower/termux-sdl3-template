@@ -17,7 +17,7 @@ To solve this, we must download a **pristine, unpatched version of the official 
 ### Step 1: Install Basic Tools
 ```bash
 pkg update
-pkg install -y wget p7zip openjdk-17 cmake make aapt aapt2 dx apksigner zipalign
+pkg install -y wget p7zip openjdk-17 cmake make aapt aapt2 dx apksigner
 ```
 
 ### Step 2: Download the Pristine AArch64 NDK

@@ -6,7 +6,7 @@ echo "Setting up SDL3 Android Development Environment in Termux..."
 # 1. Update and Install Basic Tools
 echo "Installing dependencies..."
 pkg update
-pkg install -y wget p7zip openjdk-17 cmake make aapt aapt2 dx apksigner zipalign git
+pkg install -y wget p7zip openjdk-17 cmake make aapt aapt2 dx apksigner git
 
 # 2. Setup SDK/NDK Directories
 mkdir -p ~/android-ndk-aarch64
