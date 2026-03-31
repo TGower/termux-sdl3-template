@@ -1,3 +1,4 @@
+# This was all vibe coded. Worked on my machine, able to create an android app completely standalone on my android tablet. YMMV. Slop below:
 # Termux SDL3 Android Template
 
 This repository provides a template for developing and building SDL3-based Android applications directly within Termux on an Android device.
